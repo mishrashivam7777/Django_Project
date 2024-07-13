@@ -1,11 +1,12 @@
 from django import forms
 from .models import Student
 
+
 class StudentForm(forms.ModelForm):
-    class Meta:
-        model= Student
-        fields=['students_number','first_name','last_name','email','field_of_study','gpa']
-        labels = {
+  class Meta:
+    model = Student
+    fields = ['students_number', 'first_name', 'last_name', 'email', 'field_of_study', 'gpa']
+    labels = {
       'students_number': 'Student Number',
       'first_name': 'First Name',
       'last_name': 'Last Name',
